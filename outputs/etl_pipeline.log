@@ -1,0 +1,15 @@
+2026-05-31 10:17:59,499 - INFO - ============================================================
+2026-05-31 10:17:59,499 - INFO - NEXAIQ ETL PIPELINE STARTED
+2026-05-31 10:17:59,500 - INFO - Timestamp: 2026-05-31 10:17:59
+2026-05-31 10:17:59,500 - INFO - ============================================================
+2026-05-31 10:17:59,500 - INFO - EXTRACT: Loading raw data...
+2026-05-31 10:17:59,537 - INFO - EXTRACT: 7043 rows extracted from CSV
+2026-05-31 10:17:59,537 - INFO - TRANSFORM: Starting data transformation...
+2026-05-31 10:17:59,546 - INFO - TRANSFORM: Fixed TotalCharges column
+2026-05-31 10:17:59,623 - INFO - TRANSFORM: 7043 rows after transformation
+2026-05-31 10:17:59,623 - INFO - LOAD: Loading data into PostgreSQL...
+2026-05-31 10:18:01,707 - INFO - LOAD: 7043 rows loaded into customers table
+2026-05-31 10:18:01,712 - INFO - LOAD: Verified 7043 rows in database
+2026-05-31 10:18:01,713 - INFO - ============================================================
+2026-05-31 10:18:01,714 - INFO - ETL PIPELINE COMPLETED SUCCESSFULLY
+2026-05-31 10:18:01,714 - INFO - ============================================================
