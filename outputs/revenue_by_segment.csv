@@ -1,0 +1,5 @@
+paymentmethod,customers,churn_rate,total_revenue
+Electronic check,2365,45.29,180345.0
+Mailed check,1612,19.11,70794.3
+Bank transfer (automatic),1544,16.71,103745.45
+Credit card (automatic),1522,15.24,101231.85
