@@ -1,0 +1,20 @@
+{
+  "admin": {
+    "password_hash": "$2b$12$fWtRGsaSyMugaFtpdVKaJu48JLpVsXN5v0g5xoQ.PMJjFiGoiYb0u",
+    "role": "admin",
+    "created_at": "2026-06-05T19:17:26.831102",
+    "last_login": "2026-06-05T19:17:29.808735"
+  },
+  "analyst": {
+    "password_hash": "$2b$12$R8K2Ib9XIC.fmRqK.Xl6SuHJ1RHz3lqZ1Qc3yODFnDna0SMZpx6ee",
+    "role": "analyst",
+    "created_at": "2026-06-05T19:17:27.322474",
+    "last_login": "2026-06-05T19:17:28.575644"
+  },
+  "viewer": {
+    "password_hash": "$2b$12$YQuyA2S15Pn7JgwTLrfUyuRiqYyRSH/RenyVLT12G5GOViSqklE7y",
+    "role": "viewer",
+    "created_at": "2026-06-05T19:17:27.825648",
+    "last_login": "2026-06-05T19:17:29.018220"
+  }
+}
