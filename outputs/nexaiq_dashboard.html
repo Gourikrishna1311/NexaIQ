@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NexaIQ — CRM Analytics Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+         background: #0f1117; color: #e0e0e0; }
+  .header { background: #1a1d27; padding: 20px 30px;
+             border-bottom: 2px solid #2E86AB; }
+  .header h1 { font-size: 24px; color: #2E86AB; font-weight: 600; }
+  .header p { color: #888; font-size: 13px; margin-top: 4px; }
+  .container { padding: 24px 30px; max-width: 1400px; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(6, 1fr);
+               gap: 14px; margin-bottom: 24px; }
+  .kpi-card { background: #1a1d27; border-radius: 10px;
+               padding: 16px; border: 1px solid #2a2d3a;
+               text-align: center; }
+  .kpi-value { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+  .kpi-label { font-size: 11px; color: #888; text-transform: uppercase;
+                letter-spacing: 0.5px; }
+  .charts-grid { display: grid; grid-template-columns: 1fr 1fr 1fr;
+                  gap: 18px; margin-bottom: 24px; }
+  .chart-card { background: #1a1d27; border-radius: 10px;
+                 padding: 18px; border: 1px solid #2a2d3a; }
+  .chart-title { font-size: 13px; font-weight: 600; color: #ccc;
+                  margin-bottom: 14px; text-transform: uppercase;
+                  letter-spacing: 0.5px; }
+  .chart-container { position: relative; height: 200px; }
+  .table-card { background: #1a1d27; border-radius: 10px;
+                 padding: 18px; border: 1px solid #2a2d3a; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { padding: 10px 12px; text-align: left; background: #0f1117;
+        color: #888; font-size: 11px; text-transform: uppercase;
+        letter-spacing: 0.5px; }
+  td { padding: 10px 12px; border-top: 1px solid #2a2d3a; }
+  .badge { padding: 3px 8px; border-radius: 4px; font-size: 11px;
+            font-weight: 600; }
+  .badge-danger { background: #E8485522; color: #E84855; }
+  .badge-success { background: #3BB27322; color: #3BB273; }
+  .badge-warning { background: #F9C74F22; color: #F9C74F; }
+  .blue { color: #2E86AB; }
+  .red { color: #E84855; }
+  .green { color: #3BB273; }
+  .yellow { color: #F9C74F; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>NexaIQ — CRM Analytics Dashboard</h1>
+  <p>Real-time business intelligence powered by XGBoost ML + SHAP Explainability</p>
+</div>
+
+<div class="container">
+
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-value blue">7,043</div>
+      <div class="kpi-label">Total Customers</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-value red">26.54%</div>
+      <div class="kpi-label">Churn Rate</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-value green">$456,117</div>
+      <div class="kpi-label">Monthly Revenue</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-value red">$139,131</div>
+      <div class="kpi-label">Revenue Lost</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-value yellow">521</div>
+      <div class="kpi-label">High Risk</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-value green">4,135</div>
+      <div class="kpi-label">High Value</div>
+    </div>
+  </div>
+
+  <div class="charts-grid">
+    <div class="chart-card">
+      <div class="chart-title">Churn by Contract Type</div>
+      <div class="chart-container">
+        <canvas id="contractChart"></canvas>
+      </div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Churn by Tenure Group</div>
+      <div class="chart-container">
+        <canvas id="tenureChart"></canvas>
+      </div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Revenue Breakdown</div>
+      <div class="chart-container">
+        <canvas id="revenueChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-card">
+    <div class="chart-title" style="margin-bottom:14px;">
+      Top High Risk Customers — Retention Targets
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Customer ID</th>
+          <th>Tenure (months)</th>
+          <th>Monthly Charges</th>
+          <th>Total Value</th>
+          <th>Contract</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>6734-GMPVK</td>
+          <td>5</td>
+          <td>$105.30</td>
+          <td>$526.50</td>
+          <td>Month-to-month</td>
+          <td><span class="badge badge-warning">
+            At Risk
+          </span></td>
+        </tr>
+        <tr>
+          <td>2369-UAPKZ</td>
+          <td>5</td>
+          <td>$104.10</td>
+          <td>$520.50</td>
+          <td>Month-to-month</td>
+          <td><span class="badge badge-danger">
+            Churned
+          </span></td>
+        </tr>
+        <tr>
+          <td>9681-OXGVC</td>
+          <td>5</td>
+          <td>$100.50</td>
+          <td>$502.50</td>
+          <td>Month-to-month</td>
+          <td><span class="badge badge-danger">
+            Churned
+          </span></td>
+        </tr>
+        <tr>
+          <td>4236-XPXAV</td>
+          <td>5</td>
+          <td>$99.15</td>
+          <td>$495.75</td>
+          <td>Month-to-month</td>
+          <td><span class="badge badge-danger">
+            Churned
+          </span></td>
+        </tr>
+        <tr>
+          <td>4566-NECEV</td>
+          <td>5</td>
+          <td>$96.55</td>
+          <td>$482.75</td>
+          <td>Month-to-month</td>
+          <td><span class="badge badge-warning">
+            At Risk
+          </span></td>
+        </tr>
+        <tr>
+          <td>1010-DIAUQ</td>
+          <td>5</td>
+          <td>$96.50</td>
+          <td>$482.50</td>
+          <td>Month-to-month</td>
+          <td><span class="badge badge-danger">
+            Churned
+          </span></td>
+        </tr>
+        <tr>
+          <td>7548-SEPYI</td>
+          <td>5</td>
+          <td>$96.25</td>
+          <td>$481.25</td>
+          <td>Month-to-month</td>
+          <td><span class="badge badge-danger">
+            Churned
+          </span></td>
+        </tr>
+        <tr>
+          <td>0306-JAELE</td>
+          <td>5</td>
+          <td>$96.10</td>
+          <td>$480.50</td>
+          <td>Month-to-month</td>
+          <td><span class="badge badge-danger">
+            Churned
+          </span></td>
+        </tr>
+        <tr>
+          <td>3387-VATUS</td>
+          <td>5</td>
+          <td>$94.85</td>
+          <td>$474.25</td>
+          <td>Month-to-month</td>
+          <td><span class="badge badge-danger">
+            Churned
+          </span></td>
+        </tr>
+        <tr>
+          <td>4192-GORJT</td>
+          <td>5</td>
+          <td>$94.45</td>
+          <td>$472.25</td>
+          <td>Month-to-month</td>
+          <td><span class="badge badge-danger">
+            Churned
+          </span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<script>
+const contractLabels = ["Month-to-month", "One year", "Two year"];
+const contractRates = [42.71, 11.27, 2.83];
+
+new Chart(document.getElementById('contractChart'), {
+  type: 'bar',
+  data: {
+    labels: contractLabels,
+    datasets: [{
+      label: 'Churn Rate %',
+      data: contractRates,
+      backgroundColor: ['#E84855', '#F9C74F', '#3BB273'],
+      borderRadius: 6
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      y: { grid: { color: '#2a2d3a' }, ticks: { color: '#888' } },
+      x: { grid: { display: false }, ticks: { color: '#888' } }
+    }
+  }
+});
+
+const tenureLabels = ["0-6m", "6-12m", "12-24m", "24-48m", "48-72m"];
+const tenureRates = [53.33, 35.89, 28.71, 20.39, 9.51];
+
+new Chart(document.getElementById('tenureChart'), {
+  type: 'line',
+  data: {
+    labels: tenureLabels,
+    datasets: [{
+      label: 'Churn Rate %',
+      data: tenureRates,
+      borderColor: '#2E86AB',
+      backgroundColor: '#2E86AB22',
+      tension: 0.4,
+      fill: true,
+      pointBackgroundColor: '#E84855',
+      pointRadius: 5
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      y: { grid: { color: '#2a2d3a' }, ticks: { color: '#888' } },
+      x: { grid: { display: false }, ticks: { color: '#888' } }
+    }
+  }
+});
+
+new Chart(document.getElementById('revenueChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Retained Revenue', 'Lost Revenue', 'At Risk Revenue'],
+    datasets: [{
+      data: [
+        274496,
+        139131,
+        42490
+      ],
+      backgroundColor: ['#3BB273', '#E84855', '#F9C74F'],
+      borderWidth: 0
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: { color: '#888', font: { size: 11 } }
+      }
+    }
+  }
+});
+</script>
+
+</body>
+</html>
