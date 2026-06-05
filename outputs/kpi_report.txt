@@ -1,0 +1,18 @@
+NEXAIQ KPI REPORT
+Generated: 2026-06-05 19:15:45
+==================================================
+
+total_customers: 7043.0
+churned: 1869.0
+churn_rate: 26.54
+monthly_revenue: 456116.6
+lost_revenue: 139130.85
+high_risk_count: 521.0
+high_value_count: 4135.0
+avg_monthly_charge: 64.76
+avg_tenure: 32.37
+
+AI COMMENTARY:
+The live business KPIs indicate a concerning trend in terms of customer retention and revenue loss. The high churn rate of 26.54% is significantly above the threshold, suggesting that a substantial portion of customers are leaving the business within a relatively short period. Furthermore, the presence of 521 high-risk customers further exacerbates the issue, as these customers are more likely to be troublemakers who can negatively impact revenue and overall customer satisfaction.
+
+Immediate Action Recommendation: Conduct an urgent analysis of the high-risk customers (521) to identify the root causes of their churn and develop targeted strategies to address these issues. This could include revisiting contracts, offering incentives for loyalty, or implementing additional support measures to improve customer satisfaction and retention rates.
