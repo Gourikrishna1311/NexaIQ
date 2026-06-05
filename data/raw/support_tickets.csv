@@ -1,0 +1,151 @@
+ticket_id,customer_message,actual_sentiment,priority,category
+TKT_0001,Can you tell me when the next maintenance window is,neutral,low,general
+TKT_0002,Very satisfied with the product quality and customer service,positive,low,billing
+TKT_0003,Can you tell me when the next maintenance window is,neutral,high,cancellation
+TKT_0004,"The service has been excellent, very happy with everything",positive,low,technical
+TKT_0005,"The service has been excellent, very happy with everything",positive,high,technical
+TKT_0006,I need to add a new user to my account,neutral,low,cancellation
+TKT_0007,Please send me my invoice for last month,neutral,low,technical
+TKT_0008,I need to add a new user to my account,neutral,medium,general
+TKT_0009,Very satisfied with the product quality and customer service,positive,medium,billing
+TKT_0010,"Everything works perfectly, no complaints at all",positive,low,general
+TKT_0011,"This is unacceptable, I want a refund immediately",negative,low,cancellation
+TKT_0012,Can you tell me when the next maintenance window is,neutral,medium,billing
+TKT_0013,Please send me my invoice for last month,neutral,high,general
+TKT_0014,I would like to upgrade my plan,neutral,high,billing
+TKT_0015,Very satisfied with the product quality and customer service,positive,medium,billing
+TKT_0016,Support team was incredibly helpful and resolved my issue quickly,positive,medium,general
+TKT_0017,The service keeps going down and affecting my business,negative,low,general
+TKT_0018,I am extremely frustrated with the billing issues,negative,high,general
+TKT_0019,Can you tell me when the next maintenance window is,neutral,high,technical
+TKT_0020,I would like to upgrade my plan,neutral,low,cancellation
+TKT_0021,"This is unacceptable, I want a refund immediately",negative,high,technical
+TKT_0022,What are the system requirements for the new update,neutral,low,technical
+TKT_0023,"Fast response time and professional support, highly recommend",positive,medium,general
+TKT_0024,Very satisfied with the product quality and customer service,positive,high,general
+TKT_0025,The team went above and beyond to help me,positive,medium,cancellation
+TKT_0026,"Amazing service, the best I have used in years",positive,low,technical
+TKT_0027,Please send me my invoice for last month,neutral,high,cancellation
+TKT_0028,I need to add a new user to my account,neutral,medium,technical
+TKT_0029,The team went above and beyond to help me,positive,low,billing
+TKT_0030,"Great experience overall, will definitely continue using the service",positive,high,technical
+TKT_0031,I need to add a new user to my account,neutral,high,billing
+TKT_0032,"Nobody responds to my tickets, worst experience ever",negative,high,cancellation
+TKT_0033,Please send me my invoice for last month,neutral,high,billing
+TKT_0034,Can you tell me when the next maintenance window is,neutral,high,general
+TKT_0035,What are the system requirements for the new update,neutral,low,general
+TKT_0036,"Terrible customer support, waited 3 days with no response",negative,medium,billing
+TKT_0037,Please send me my invoice for last month,neutral,high,technical
+TKT_0038,Can you tell me when the next maintenance window is,neutral,high,general
+TKT_0039,I would like to upgrade my plan,neutral,low,general
+TKT_0040,"The service has been excellent, very happy with everything",positive,high,general
+TKT_0041,"Very disappointed with the service, considering cancelling",negative,low,general
+TKT_0042,I am extremely frustrated with the billing issues,negative,low,technical
+TKT_0043,Can you tell me when the next maintenance window is,neutral,low,cancellation
+TKT_0044,"Great experience overall, will definitely continue using the service",positive,low,cancellation
+TKT_0045,How do I reset my password,neutral,medium,cancellation
+TKT_0046,Very satisfied with the product quality and customer service,positive,high,general
+TKT_0047,The service keeps going down and affecting my business,negative,medium,cancellation
+TKT_0048,Very satisfied with the product quality and customer service,positive,low,billing
+TKT_0049,"Very disappointed with the service, considering cancelling",negative,high,technical
+TKT_0050,I would like to upgrade my plan,neutral,low,billing
+TKT_0051,I need to update my billing information,neutral,low,billing
+TKT_0052,"Fast response time and professional support, highly recommend",positive,low,technical
+TKT_0053,I have been overcharged multiple times and nobody fixes it,negative,low,technical
+TKT_0054,Can you confirm my subscription renewal date,neutral,low,cancellation
+TKT_0055,I am extremely frustrated with the billing issues,negative,low,billing
+TKT_0056,I need to add a new user to my account,neutral,medium,cancellation
+TKT_0057,I have been overcharged multiple times and nobody fixes it,negative,high,billing
+TKT_0058,Can you tell me when the next maintenance window is,neutral,low,cancellation
+TKT_0059,What are the system requirements for the new update,neutral,low,technical
+TKT_0060,Very satisfied with the product quality and customer service,positive,high,cancellation
+TKT_0061,"Everything works perfectly, no complaints at all",positive,low,general
+TKT_0062,I am extremely frustrated with the billing issues,negative,low,cancellation
+TKT_0063,Can you tell me when the next maintenance window is,neutral,low,billing
+TKT_0064,Very satisfied with the product quality and customer service,positive,low,cancellation
+TKT_0065,I have been overcharged multiple times and nobody fixes it,negative,low,cancellation
+TKT_0066,"Great experience overall, will definitely continue using the service",positive,medium,billing
+TKT_0067,"This is unacceptable, I want a refund immediately",negative,medium,general
+TKT_0068,I have been overcharged multiple times and nobody fixes it,negative,low,technical
+TKT_0069,I am extremely frustrated with the billing issues,negative,low,billing
+TKT_0070,What are the system requirements for the new update,neutral,low,billing
+TKT_0071,Can you confirm my subscription renewal date,neutral,high,technical
+TKT_0072,Support team was incredibly helpful and resolved my issue quickly,positive,low,billing
+TKT_0073,Can you tell me when the next maintenance window is,neutral,high,technical
+TKT_0074,The product stopped working and nobody is helping me,negative,high,technical
+TKT_0075,I need to update my billing information,neutral,high,billing
+TKT_0076,The service keeps going down and affecting my business,negative,medium,technical
+TKT_0077,What are the system requirements for the new update,neutral,low,general
+TKT_0078,"Terrible customer support, waited 3 days with no response",negative,high,general
+TKT_0079,The service keeps going down and affecting my business,negative,low,billing
+TKT_0080,The product stopped working and nobody is helping me,negative,low,technical
+TKT_0081,Please send me my invoice for last month,neutral,low,general
+TKT_0082,Very satisfied with the product quality and customer service,positive,medium,general
+TKT_0083,The team went above and beyond to help me,positive,high,general
+TKT_0084,I need to update my billing information,neutral,high,general
+TKT_0085,Can you tell me when the next maintenance window is,neutral,low,general
+TKT_0086,Support team was incredibly helpful and resolved my issue quickly,positive,high,technical
+TKT_0087,"This is unacceptable, I want a refund immediately",negative,high,technical
+TKT_0088,What are the system requirements for the new update,neutral,low,general
+TKT_0089,Can you confirm my subscription renewal date,neutral,medium,billing
+TKT_0090,"Everything works perfectly, no complaints at all",positive,medium,billing
+TKT_0091,"Fast response time and professional support, highly recommend",positive,low,general
+TKT_0092,The team went above and beyond to help me,positive,high,cancellation
+TKT_0093,I need to update my billing information,neutral,low,billing
+TKT_0094,How do I reset my password,neutral,high,billing
+TKT_0095,"Terrible customer support, waited 3 days with no response",negative,medium,technical
+TKT_0096,"Amazing service, the best I have used in years",positive,medium,billing
+TKT_0097,I am extremely frustrated with the billing issues,negative,high,technical
+TKT_0098,Can you tell me when the next maintenance window is,neutral,medium,cancellation
+TKT_0099,How do I reset my password,neutral,low,technical
+TKT_0100,"Everything works perfectly, no complaints at all",positive,low,technical
+TKT_0101,What are the system requirements for the new update,neutral,medium,technical
+TKT_0102,"Terrible customer support, waited 3 days with no response",negative,high,billing
+TKT_0103,"Very disappointed with the service, considering cancelling",negative,medium,technical
+TKT_0104,The team went above and beyond to help me,positive,medium,general
+TKT_0105,Very satisfied with the product quality and customer service,positive,low,technical
+TKT_0106,The service keeps going down and affecting my business,negative,medium,billing
+TKT_0107,The service keeps going down and affecting my business,negative,high,cancellation
+TKT_0108,What are the system requirements for the new update,neutral,low,billing
+TKT_0109,"Terrible customer support, waited 3 days with no response",negative,high,general
+TKT_0110,Support team was incredibly helpful and resolved my issue quickly,positive,high,cancellation
+TKT_0111,The service keeps going down and affecting my business,negative,medium,billing
+TKT_0112,I am extremely frustrated with the billing issues,negative,medium,billing
+TKT_0113,I need to add a new user to my account,neutral,low,technical
+TKT_0114,"Nobody responds to my tickets, worst experience ever",negative,low,general
+TKT_0115,What are the system requirements for the new update,neutral,high,billing
+TKT_0116,Please send me my invoice for last month,neutral,high,general
+TKT_0117,I need to add a new user to my account,neutral,medium,cancellation
+TKT_0118,Please send me my invoice for last month,neutral,high,technical
+TKT_0119,"Everything works perfectly, no complaints at all",positive,high,cancellation
+TKT_0120,How do I reset my password,neutral,high,general
+TKT_0121,"Very disappointed with the service, considering cancelling",negative,medium,general
+TKT_0122,"Everything works perfectly, no complaints at all",positive,high,general
+TKT_0123,I have been overcharged multiple times and nobody fixes it,negative,medium,technical
+TKT_0124,Can you confirm my subscription renewal date,neutral,high,technical
+TKT_0125,Can you tell me when the next maintenance window is,neutral,medium,general
+TKT_0126,Very satisfied with the product quality and customer service,positive,high,general
+TKT_0127,Very satisfied with the product quality and customer service,positive,low,billing
+TKT_0128,Very satisfied with the product quality and customer service,positive,medium,billing
+TKT_0129,"Nobody responds to my tickets, worst experience ever",negative,high,technical
+TKT_0130,I need to add a new user to my account,neutral,medium,cancellation
+TKT_0131,"Great experience overall, will definitely continue using the service",positive,high,billing
+TKT_0132,"Everything works perfectly, no complaints at all",positive,low,technical
+TKT_0133,Can you confirm my subscription renewal date,neutral,low,technical
+TKT_0134,The team went above and beyond to help me,positive,low,cancellation
+TKT_0135,What are the system requirements for the new update,neutral,medium,cancellation
+TKT_0136,Can you confirm my subscription renewal date,neutral,low,cancellation
+TKT_0137,"This is unacceptable, I want a refund immediately",negative,low,general
+TKT_0138,Can you confirm my subscription renewal date,neutral,high,technical
+TKT_0139,I have been overcharged multiple times and nobody fixes it,negative,low,general
+TKT_0140,"Amazing service, the best I have used in years",positive,medium,general
+TKT_0141,Can you tell me when the next maintenance window is,neutral,low,technical
+TKT_0142,"Everything works perfectly, no complaints at all",positive,high,technical
+TKT_0143,I would like to upgrade my plan,neutral,low,cancellation
+TKT_0144,The service keeps going down and affecting my business,negative,high,cancellation
+TKT_0145,"Very disappointed with the service, considering cancelling",negative,low,cancellation
+TKT_0146,"Very disappointed with the service, considering cancelling",negative,high,cancellation
+TKT_0147,"Very disappointed with the service, considering cancelling",negative,medium,general
+TKT_0148,"Nobody responds to my tickets, worst experience ever",negative,high,technical
+TKT_0149,I am extremely frustrated with the billing issues,negative,medium,cancellation
+TKT_0150,"Very disappointed with the service, considering cancelling",negative,medium,general

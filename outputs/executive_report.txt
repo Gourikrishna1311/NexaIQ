@@ -1,0 +1,10 @@
+NEXAIQ EXECUTIVE REPORT
+==================================================
+
+**Executive Summary**
+
+Our current business health is at risk due to the high churn rate of 26.54% among our 7043 customers, resulting in a monthly revenue loss of $139,131. To mitigate this, we must identify and address the underlying causes contributing to customer dissatisfaction.
+
+A key risk area identified through analysis is the presence of 521 high-risk customers, who are significantly impacting our overall churn rate. Furthermore, our sentiment analysis reveals that 24.0% of customer interactions are marked by negative sentiments, highlighting a need for enhanced support and service resolution processes. These findings underscore the importance of proactive measures to address customer concerns and prevent further loss.
+
+To immediately address these risks, we recommend prioritizing the following actions: (1) implement targeted outreach programs to engage with high-risk customers; (2) enhance our knowledge base and training programs to improve customer support efficiency; and (3) establish a dedicated sentiment analysis team to proactively identify and resolve negative interactions. By taking swift action, we can reduce churn, increase revenue, and strengthen customer satisfaction.
