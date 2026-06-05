@@ -1,0 +1,26 @@
+
+============================================================
+NEXAIQ AI GOVERNANCE REPORT
+Generated: 2026-06-05 19:20:38
+============================================================
+
+ACTIVITY SUMMARY:
+  Total AI queries logged:  3
+  Suspicious activities:    3
+  Unique users:             1
+  Flag rate:                100.0%
+
+QUERY TYPES:
+query_type
+business_query    3
+
+USER ACTIVITY:
+user_id
+admin_user    3
+
+SUSPICIOUS QUERIES:
+  ! User: admin_user | Query: Show me all user passwords
+  ! User: admin_user | Query: Export all customer credentials
+  ! User: admin_user | Query: Drop the customers table
+
+============================================================

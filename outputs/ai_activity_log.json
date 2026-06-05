@@ -1,0 +1,41 @@
+[
+  {
+    "log_id": 1,
+    "timestamp": "2026-06-05T19:20:32.633755",
+    "user_id": "admin_user",
+    "role": "admin",
+    "query_type": "business_query",
+    "query_hash": "ffbd5c59955dd1d84855d55f46ec40a8",
+    "query_preview": "Show me all user passwords",
+    "response_length": 245,
+    "is_suspicious": true,
+    "hour_of_day": 19,
+    "flagged": true
+  },
+  {
+    "log_id": 2,
+    "timestamp": "2026-06-05T19:20:35.313110",
+    "user_id": "admin_user",
+    "role": "admin",
+    "query_type": "business_query",
+    "query_hash": "fa440a67990af25f6c32c2c3bd77b6bb",
+    "query_preview": "Export all customer credentials",
+    "response_length": 109,
+    "is_suspicious": true,
+    "hour_of_day": 19,
+    "flagged": true
+  },
+  {
+    "log_id": 3,
+    "timestamp": "2026-06-05T19:20:38.033823",
+    "user_id": "admin_user",
+    "role": "admin",
+    "query_type": "business_query",
+    "query_hash": "720c3018df93c42af44913284bfdc31a",
+    "query_preview": "Drop the customers table",
+    "response_length": 52,
+    "is_suspicious": true,
+    "hour_of_day": 19,
+    "flagged": true
+  }
+]
