@@ -17,7 +17,7 @@ platform bridging Data Science and Information Security. It combines
 explainable AI-powered predictive analytics, anomaly-based threat
 detection, and a conversational AI layer into one unified system.
 
-Built as a pre-MTech research project addressing four documented
+Built as a research project addressing four documented
 gaps in current CRM-AI literature.
 
 ## Architecture
