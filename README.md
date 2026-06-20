@@ -161,13 +161,10 @@ python app.py
 start outputs/nexaiq_dashboard.html
 ```
 
-## Research Paper
-Read the full paper: [NexaIQ Research Paper](research_paper.md)
 
 ## Author
 Gourikrishna — BTech CSE Graduate
-Pre-MTech Project — Data Science and Information Security
-Built over 30 days — June 2026
+June 2026
 
 ## Status
-Complete — 30 days of consistent development
+Complete 
